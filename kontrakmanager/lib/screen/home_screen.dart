@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kontrakmanager/res/app_text_style.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -6,17 +7,20 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: const [
-          Text(
-            "Daftar penghuni",
-            style: TextStyle(fontSize: 24),
-          ),
-          Text(
-            "Riwayat keluar/masuk",
-            style: TextStyle(fontSize: 24),
-          ),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: ListView(
+          children: [
+            Text(
+              "Daftar penghuni",
+              style: head2TextStyle,
+            ),
+            Text(
+              "Riwayat keluar/masuk",
+              style: head2TextStyle,
+            ),
+          ],
+        ),
       ),
     );
   }

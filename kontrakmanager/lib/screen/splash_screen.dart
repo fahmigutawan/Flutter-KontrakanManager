@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:kontrakmanager/controller/splash_controller.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -16,18 +17,15 @@ class SplashScreen extends StatelessWidget {
               Get.offNamed("/home_screen");
             },
           );
-          return const Scaffold(
+          return Scaffold(
             body: ColoredBox(
               color: Colors.black87,
               child: Padding(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 child: Center(
                   child: Text(
                     "KONTRAKAN MANAGER",
-                    style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 32,
-                    ),
+                    style: GoogleFonts.caveatBrush(fontSize: 32, color: Colors.white),
                     textAlign: TextAlign.center,
                   ),
                 ),
